@@ -2,3 +2,6 @@
   text-align: center;
   background-color: silver;
 }
+input[type="radio"]{
+  margin-left:10px;
+}
