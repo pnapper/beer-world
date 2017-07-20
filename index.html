@@ -10,14 +10,17 @@
   <body>
     <div class="container">
       <div class="jumbotron">
-    <h1>Discover the World of Beer</h1>
-        </div>
+      <h1>Discover the World of Beer</h1>
+      </div>
+    </div>
 
-    <h2>Answer the following questions</h2>
-    <div class=row>
-      <div class=col-md-6>
-        <fieldset class="form-group">
-    <legend>Choose a beer color</legend>
+    <div class="container">
+      <div id="survey">
+        <h2>Answer the following questions</h2>
+        <div class=row>
+          <div class=col-md-6>
+            <fieldset class="form-group">
+      <legend>Choose a beer color</legend>
         <div class="form-check">
           <label class="form-check-label">
             <input type="radio" class="form-check-input" name="color" id="optionsRadios2" value="light">
@@ -136,10 +139,16 @@
                 Asia
               </label>
             </div>
-      </div>
+            <button id=submit type="submit"> Submit </button>
+          </div>
+          <div id="return">
+            <p>Test</p>
+          </div>
+
         <div class=col-md-6>
           <img src="images/beer w labels.jpeg" height="700" width="600">
         </div>
+      </div>
     </div>
   </body>
 </html>
