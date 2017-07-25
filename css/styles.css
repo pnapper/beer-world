@@ -2,8 +2,13 @@
   display: none;
 }
 .jumbotron {
-  text-align: center;
-  background-color: silver;
+    background-image: url("../images/beerj.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    text-align: right;;
+    color: #FFF4E1;
 }
 input[type="radio"]{
   margin-left:10px;
@@ -11,6 +16,7 @@ input[type="radio"]{
 input[type="checkbox"]{
   margin-left: 10px;
 }
+<<<<<<< HEAD
 #lager {
   display: none;
 }
@@ -28,4 +34,36 @@ input[type="checkbox"]{
 }
 #cider {
   display: none;
+}
+body {
+  background-color: #5e7aa8;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+};
+
+.surveyChoices {
+  color: black;
+  font-weight: bolder;
+  font-size: 15px;
+}
+
+h2{
+  font-family: Impact, Charcoal, sans-serif
+
+
+}
+
+p {
+  text-indent: 50px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+  font-weight: bolder;
+
+}
+
+ul {
+  font-size: 20px;
+  font-weight: bolder;
 }
