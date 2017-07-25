@@ -12,3 +12,21 @@ input[type="radio"]{
 input[type="checkbox"]{
   margin-left: 10px;
 }
+#lager {
+  display: none;
+}
+#ipa{
+  display: none;
+}
+#amber {
+  display: none;
+}
+#red {
+  display: none;
+}
+#stout {
+  display: none;
+}
+#cider {
+  display: none;
+}

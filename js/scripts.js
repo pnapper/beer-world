@@ -8,8 +8,10 @@ function Beer (color, bitterness, level, price) {
   this.origin = [];
 }
 
-prototype.beer.choice function() {
-
+Beer.prototype.choice = function() {
+    if (color === light) {
+    return $("#lager").show();
+}
 }
 
 //Interface logic
@@ -30,7 +32,8 @@ $(document).ready(function(){
       var origin = $(this).val();
       beer.origin.push(origin);
     });
-
+    var newBeer = new Beer (color, bitterness, level, price);
+    newBeer.choice();
     $("#survey").hide();
     $("#return").show();
   });
