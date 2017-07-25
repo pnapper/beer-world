@@ -9,10 +9,10 @@ function Beer (color, bitterness, level, price) {
 }
 
 Beer.prototype.choice = function() {
-    if (color === light) {
-    return $("#lager").show();
+  if (this.color === "light");
+  $("#lager").show();
 }
-}
+
 
 //Interface logic
 $(document).ready(function(){
@@ -23,18 +23,20 @@ $(document).ready(function(){
     var level = $("input:radio[name=drunk]:checked").val();
     var price = $("input:radio[name=price]:checked").val();
     var beer = new Beer(color, bitterness, level, price);
+
     $("input:checkbox[id=hop]:checked").each(function() {
       var hop = $(this).val();
       beer.hop.push(hop);
-    });
 
-    $("input:checkbox[id=origin]:checked").each(function() {
-      var origin = $(this).val();
-      beer.origin.push(origin);
+
+      $("input:checkbox[id=origin]:checked").each(function() {
+        var origin = $(this).val();
+        beer.origin.push(origin);
+      });
+
+      beer.choice();
+      $("#survey").hide();
+      $(".return").show();
     });
-    var newBeer = new Beer (color, bitterness, level, price);
-    newBeer.choice();
-    $("#survey").hide();
-    $("#return").show();
   });
 });
