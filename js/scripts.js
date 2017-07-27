@@ -26,11 +26,11 @@ Beer.prototype.choice = function() {
   $("#red").show();
 }
   else if
-  ((this.color === "brown") && (this.bitterness === "slight" || this.bitterness === "medium") && (this.level === "5-7%" || this.level === "Above 10%") && (this.price === "$5-8")) {
+  ((this.color === "brown") && (this.bitterness === "slight" || this.bitterness === "medium") && (this.level === "5-7%" || this.level === "8-10%") && (this.price === "$5-8")) {
   $("#porter").show();
 }
   else if
-  ((this.color === "dark") && (this.bitterness === "slight") && (this.level === "5-7%" || this.level === "Above 10%") && (this.price === "$5-8" || this.price === "More than $8")) {
+  ((this.color === "dark") && (this.bitterness === "slight" || this.bitterness === "medium") && (this.level === "8-10%" || this.level === "Above 10%") && (this.price === "$5-8" || this.price === "More than $8")) {
   $("#stout").show();
 }
 
