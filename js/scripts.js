@@ -9,8 +9,34 @@ function Beer (color, bitterness, level, price) {
 }
 
 Beer.prototype.choice = function() {
-  if (this.color === "light");
+  if
+  ((this.color === "light") && (this.bitterness === "none") && (this.level === "Less than 4%") && (this.price === "$4 or less")) {
   $("#lager").show();
+}
+  else if
+  ((this.color === "light" || this.color === "golden") && (this.bitterness === "medium" || this.bitterness ==="heavy") && (this.level === "5-7%" || this.level === "8-10%") && (this.price === "$5-8")) {
+  $("#ipa").show();
+}
+  else if
+  ((this.color === "amber") && (this.bitterness === "slight" || this.bitterness === "medium") && (this.level === "5-7%") && (this.price === "$5-8")) {
+  $("#amber").show();
+}
+  else if
+  ((this.color === "red") && (this.bitterness === "medium") && (this.level === "5-7%") && (this.price === "$5-8")) {
+  $("#red").show();
+}
+  else if
+  ((this.color === "brown") && (this.bitterness === "slight" || this.bitterness === "medium") && (this.level === "5-7%" || this.level === "Above 10%") && (this.price === "$5-8")) {
+  $("#porter").show();
+}
+  else if
+  ((this.color === "dark") && (this.bitterness === "slight") && (this.level === "5-7%" || this.level === "Above 10%") && (this.price === "$5-8" || this.price === "More than $8")) {
+  $("#stout").show();
+}
+
+  else {
+    $("#cider").show();
+  }
 }
 
 
